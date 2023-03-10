@@ -1,0 +1,31 @@
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+    margin-top: 8px;
+}
+
+body{
+    width: 65%;
+    margin: 10px auto;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    background-color: #CACCFF;
+}
+.title{
+    font-size: 38px;
+    font-weight: 700;
+}
+.accordion:hover{
+    cursor: pointer;
+}
+.item-title{
+    font-weight: 700;
+    color: #363BFF;
+    transition: all 0.2s linear;
+}
+.accordion:hover .item-title{
+    color: black;
+}
