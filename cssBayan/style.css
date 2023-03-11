@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6, ul{
     margin: 0;
     padding: 0;
 }
@@ -13,19 +13,59 @@ body{
     font-family: 'Mulish', sans-serif;
     font-size: 20px;
     background-color: #CACCFF;
+    overflow-y: scroll;
 }
 .title{
+    padding-bottom: 5px;
+    border-bottom: 2px solid #767676;
     font-size: 38px;
     font-weight: 700;
+}
+.accordion{
+    width: 90%;
+    margin: 0 auto;
 }
 .accordion:hover{
     cursor: pointer;
 }
+.accordion-item{
+    height: 1.8em;
+    border-bottom: 2px solid #767676;
+    transition: all .3s linear; 
+}
+.accordion-item:hover{
+    height: 15em;
+}
 .item-title{
+    display: flex;
+    justify-content: space-between;
     font-weight: 700;
     color: #363BFF;
-    transition: all 0.2s linear;
+    transition: all .2s linear;
+}
+.item-title svg{
+    width: 20px;
+    opacity: 0;
+    transition: all .2s linear;
+}
+.accordion:hover .item-title svg{
+    opacity: 1;
 }
 .accordion:hover .item-title{
     color: black;
+}
+.item-content{
+    margin: 2% auto;
+    text-align: center;
+}
+.item-content img{
+    height: 12em;
+    opacity: 0;
+    transition: all .2s linear;
+}
+.accordion-item:hover .item-content img{
+    opacity: 1;
+}
+.accordion-item:hover .item-title svg{
+    transform: rotate(45deg);
 }
