@@ -1,25 +1,18 @@
-h1, h2, h3, h4, h5, h6, ul{
-    margin: 0;
-    padding: 0;
-}
-li{
-    list-style-type: none;
-    margin-top: 1.5%;
-}
-
 @media screen and (max-width: 1920px) {
     body{
         width: 65%;
         margin: 1% auto;
         font-family: 'Mulish', sans-serif;
-        font-size: 100%;
         background-color: #CACCFF;
         overflow-y: scroll;
+    }
+    span{
+        font-size: 120%;
     }
     .title{
         padding-bottom: 1.5%;
         border-bottom: 0.1em solid #767676;
-        font-size: 200%;
+        font-size: 210%;
         font-weight: 700;
     }
     .accordion{
@@ -30,20 +23,33 @@ li{
         cursor: pointer;
     }
     .accordion-item{
-        max-height: 1.8em;
-        border-bottom: 0.1em solid #767676;
+        max-height: 17.5em;
+        border-top: 0.1em solid #767676;
         transition: all .3s linear; 
     }
-    .accordion-item:hover{
+    .accordion-item:first-child{
+        border-top: none;
+    }
+    .accordion-item .item-content{
+        max-height: 0;
+        transition: all .2s linear;
+    }
+    .accordion-item:hover .item-content{
         max-height: 15em;
+    }
+    .item-btn{
+        visibility: hidden;
+        font-size: 0;
     }
     .item-title{
         display: flex;
         justify-content: space-between;
+        font-size: 100%;
         font-weight: 700;
         color: #363BFF;
         transition: all .2s linear;
     }
+    
     .item-title svg{
         max-width: 2.5%;
         opacity: 0;
@@ -59,16 +65,30 @@ li{
         margin: 2% auto;
         text-align: center;
     }
-    .item-content img{
+    .item-img{
         max-height: 0;
         opacity: 0;
         transition: all .2s linear;
     }
-    .accordion-item:hover .item-content img{
+    .accordion-item:hover .item-img{
         max-height: 12em;
         opacity: 1;
     }
     .accordion-item:hover .item-title svg{
+        transform: rotate(45deg);
+    }
+
+    .item-btn:checked~.item-content>.item-img{
+        max-height: 12em;
+        opacity: 1;
+    }
+    .item-btn:checked~.item-content{
+        max-height: 16em;
+    }
+    .item-btn:checked~.item-title{
+        color: #000;
+    }
+    .item-btn:checked~.item-title>svg{
         transform: rotate(45deg);
     }
 }

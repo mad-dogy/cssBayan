@@ -7,59 +7,77 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./normalise.css">
     <link rel="stylesheet" href="./style.css">
     <title>Css-Bayan</title>
 </head>
 <body>
     <h1 class="title">Css-Bayan</h1>
-    <div class="accordion">
+    <section class="accordion">
         <ul>
             <li class="accordion-item">
-                <div class="item-title">
-                    <span>HTML + CSS</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"/></svg>
-                </div>
-                <div class="item-content">
-                    <img src="./assets/HTML+CSS.jpg" alt="meme HTML + CSS">
-                </div>
+                    <label  class="item-wrapper">
+                        <input type="radio" class="item-btn" name="item" checked>
+                        <div class="item-title">
+                            <span>HTML + CSS</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"/></svg>
+                        </div>
+                        <div class="item-content">
+                            <img class="item-img" src="./assets/HTML+CSS.jpg" alt="meme HTML + CSS">
+                        </div>
+                    </label>
             </li>
             <li class="accordion-item">
-                <div class="item-title">
-                    <span>Types of Headaches</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"/></svg>
-               </div>
-                <div class="item-content">
-                    <img src="./assets/headaches.jpeg" alt="meme types of headaches">
-                </div>
+                    <label class="item-wrapper">
+                        <input type="radio" class="item-btn" name="item">
+                        <div class="item-title">
+                            <span>Types of Headaches</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"/></svg>
+                        </div>
+                        <div class="item-content">
+                            <img class="item-img" src="./assets/headaches.jpeg" alt="meme types of headaches">
+                        </div>
+                    </label>
             </li>
             <li class="accordion-item">
-                <div class="item-title">
-                    <span>Me at 2AM</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"/></svg>
-                </div>
-                <div class="item-content">
-                    <img src="./assets/meAt2AM.png" alt="meme me at 2AM">
-                </div>
+                    <label class="item-wrapper">
+                        <input type="radio" class="item-btn" name="item">
+                        <div class="item-title">
+                            <span>Me at 2AM</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"/></svg>
+                        </div>
+                        <div class="item-content">
+                            <img class="item-img" src="./assets/meAt2AM.png" alt="meme me at 2AM">
+                        </div>
+                    </label>
             </li>
             <li class="accordion-item">
-                <div class="item-title">
-                    <span>RS School Stage 0 - Stage 2</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"/></svg>
-                </div>
-                <div class="item-content">
-                    <img src="./assets/stage0-stage2.png" alt="meme Stage0-Stage2">
-                </div>
+                    <label class="item-wrapper">
+                        <input type="radio" class="item-btn" name="item">
+                        <div class="item-title">
+                            <span>RS School Stage 0 - Stage 2</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"/></svg>
+                        </div>
+                        <div class="item-content">
+                            <img class="item-img" src="./assets/stage0-stage2.png" alt="meme Stage0-Stage2">
+                        </div>
+                    </label>
             </li>
             <li class="accordion-item">
-                <div class="item-title">
-                    <span>Student 1</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"/></svg>
-                </div>
-                <div class="item-content">
-                    <img src="./assets/student1.png" alt="meme student 1">
-                </div>
+                <input type="radio" class="item-btn">
+                    <label class="item-wrapper">
+                        <input type="radio" class="item-btn" name="item">
+                        <div class="item-title">
+                            <span>Student 1</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"/></svg>
+                        </div>
+                        <div class="item-content">
+                            <img class="item-img" src="./assets/student1.png" alt="meme student 1">
+                        </div>
+                    </label>
             </li>
         </ul>
-    </div>
+    </section>
 </body>
 </html>
